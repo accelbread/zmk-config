@@ -50,7 +50,7 @@
             bindings = <
     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
     &none        &kp INS      &kp DEL      &out OUT_USB &kp CAPS   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-    &none        &none        &none        &out OUT_BLE &kp PSCRN  &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
+    &bootloader  &none        &none        &out OUT_BLE &kp PSCRN  &kp F11 &kp F12 &kp F13 &kp F14 &bootloader
     &none &none &none
             >;
         };
