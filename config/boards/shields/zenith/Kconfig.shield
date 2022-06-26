@@ -1,0 +1,6 @@
+config SHIELD_ZENITH_LEFT
+    def_bool $(shields_list_contains,zenith_left)
+
+config SHIELD_ZENITH_RIGHT
+    def_bool $(shields_list_contains,zenith_right)
+
