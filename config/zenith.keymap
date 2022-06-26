@@ -1,0 +1,58 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
+        hl: homerow_layers {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <100>;
+            bindings = <&mo>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+    &kp Q      &kp W       &kp E        &kp R   &kp T   &kp Y   &kp U   &kp I        &kp O       &kp P
+    &hm LALT A &hm LCTRL S &hm LSHIFT D &hl 1 F &hl 2 G &hl 2 H &hl 1 J &hm RSHIFT K &hm RCTRL L &hm RALT SEMI
+    &hm LGUI Z &kp X       &kp C        &kp V   &kp B   &kp N   &kp M   &kp COMMA    &kp DOT     &hm RGUI FSLH
+    &none &none &none
+            >;
+        };
+
+        symbols_layer {
+            bindings = <
+    &kp N1         &kp N2        &kp N3          &kp N4      &kp N5    &kp N6     &kp N7     &kp N8        &kp N9          &kp N0
+    &hm LALT TAB   &hm LCTRL RET &hm LSHIFT BSPC &hl 1 SPACE &hl 2 ESC &hl 2 LEFT &hl 1 DOWN &hm RSHIFT UP &hm RCTRL RIGHT &hm RALT SQT
+    &hm LGUI GRAVE &kp LBRC      &kp RBRC        &kp MINUS   &kp EQUAL &kp HOME   &kp PG_DN  &kp PG_UP     &kp END         &hm RGUI BSLH
+    &none &none &none
+            >;
+        };
+
+        function_layer {
+            bindings = <
+    &none &none &none      &none        &kp DEL   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+    &none &none &bt BT_NXT &out OUT_TOG &kp CAPS  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+    &none &none &bt BT_CLR &kp INS      &kp PSCRN &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
+    &none &none &none
+            >;
+        };
+    };
+};
