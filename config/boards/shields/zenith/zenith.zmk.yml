@@ -2,7 +2,6 @@ file_format: "1"
 id: zenith
 name: Zenith
 type: shield
-url: https://github.com/accelbread/zmk-config
 requires:
   - pro_micro
 features:
@@ -10,3 +9,4 @@ features:
 siblings:
   - zenith_left
   - zenith_right
+  - zenith_dongle
