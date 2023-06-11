@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: slicemk
-      url-base: https://github.com/slicemk
   projects:
     - name: zmk
-      remote: slicemk
-      revision: dongle-pr
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
