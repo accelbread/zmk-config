@@ -3,8 +3,15 @@ if SHIELD_ZENITH_DONGLE
 config ZMK_KEYBOARD_NAME
     default "Zenith"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+endif
+
+if SHIELD_ZENITH_LEFT || SHIELD_ZENITH_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 
 endif
 
