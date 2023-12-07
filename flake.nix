@@ -2,6 +2,6 @@
   inputs.flakelite.url = "github:accelbread/flakelite";
   outputs = { flakelite, ... }:
     flakelite ./. {
-      devTools = pkgs: with pkgs; [ python3Packages.west ];
+      devShell.packages = pkgs: with pkgs; [ python3Packages.west ];
     };
 }

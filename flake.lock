@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1684033521,
-        "narHash": "sha256-XaYp6C0P+J9TZih/9tW/hlaCesk0LV8Zrv8QntlG4QU=",
+        "lastModified": 1701931616,
+        "narHash": "sha256-bcu55ow7C3TEu6XekAjkMbFsEd9d8ranjpACFM3t/M0=",
         "owner": "accelbread",
         "repo": "flakelite",
-        "rev": "af3e7f7a6fb2792df008cbca27203cc094846c7d",
+        "rev": "88607687cf3b67a075f60bf5477b2b46dc0138a1",
         "type": "github"
       },
       "original": {
@@ -20,16 +20,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1680665430,
-        "narHash": "sha256-MTVhTukwza1Jlq2gECITZPFnhROmylP2uv3O3cSqQCE=",
+        "lastModified": 1701436327,
+        "narHash": "sha256-tRHbnoNI8SIM5O5xuxOmtSLnswEByzmnQcGGyNRjxsE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5233fd2ba76a3accb5aaa999c00509a11fd0793c",
+        "rev": "91050ea1e57e50388fa87a3302ba12d188ef723a",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
-        "ref": "nixos-22.11",
+        "ref": "nixos-unstable",
         "type": "indirect"
       }
     },
