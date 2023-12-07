@@ -1,13 +1,7 @@
 {
-  inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-    flakelite.url = "github:accelbread/flakelite";
-  };
-  outputs = { self, nixpkgs, flakelite }@inputs:
+  inputs.flakelite.url = "github:accelbread/flakelite";
+  outputs = { flakelite, ... }:
     flakelite ./. {
-      inherit inputs;
-      devTools = pkgs: with pkgs; [
-        python3Packages.west
-      ];
+      devTools = pkgs: with pkgs; [ python3Packages.west ];
     };
 }
